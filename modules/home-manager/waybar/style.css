@@ -1,0 +1,92 @@
+@import "mocha.css";
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  font-weight: 600;
+  color: @text;
+}
+window#waybar {
+  background: transparent;
+}
+tooltip {
+  opacity: 0.9;
+  background-color: @base;
+  border-radius: 10px;
+  border-width: 1.9px;
+  border-style: solid;
+  border-color: @blue;
+}
+#custom-nixos, #clock, #window, #workspaces, #network, #cpu, #memory, #disk, #temperature, #backlight, #pulseaudio, #tray {
+  margin-top: 5px;
+  background-color: @base;
+}
+#custom-nixos {
+  margin-left: 9px;
+  padding-left: 8px;
+  padding-right: 14px;
+  font-size: 16px;
+  color: @blue;
+}
+#clock {
+  padding-right: 8px;
+  color: @red;
+}
+#window {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#workspaces {
+  padding-right: 5px;
+}
+#network, #tray {
+  margin-right: 9px;
+  margin-left: 9px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+#window, #cpu, #memory, #disk, #temperature, #backlight, #pulseaudio {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+#window, #workspaces, #network, #tray {
+  border-radius: 10px;
+}
+#custom-nixos, #cpu, #backlight {
+  border-radius: 10px 0px 0px 10px;
+}
+#clock, #temperature, #pulseaudio {
+  border-radius: 0px 10px 10px 0px;
+}
+#cpu {
+  padding-left: 8px;
+  color: @sapphire;
+}
+#memory {
+  color: @sky;
+}
+#disk {
+  color: @teal;
+}
+#temperature {
+  padding-right: 8px;
+  color: @green;
+}
+#network {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: @yellow;
+}
+#backlight {
+  padding-left: 8px;
+  color: @peach;
+}
+#pulseaudio {
+  padding-right: 8px;
+  color: @maroon;
+}
+#tray {
+  padding-left: 8px;
+  padding-right: 8px;
+}

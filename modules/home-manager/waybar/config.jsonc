@@ -1,0 +1,77 @@
+{
+  "layer": "top",
+  "modules-left": [ "custom/nixos", "clock", "hyprland/window" ],
+  "modules-center": [ "hyprland/workspaces" ],
+  "modules-right": [ "group/hardware", "network", "backlight", "pulseaudio", "tray" ],
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [ "cpu", "memory", "disk", "temperature" ]
+  },
+    "custom/nixos": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "pkill rofi || rofi -show combi -modes combi -combi-modes 'window,drun,run' -show-icons"
+    },
+    "clock": {
+      "format": "{:%T}",
+      "interval": 1,
+      "tooltip-format": "<big>{:%a, %d/%m}</big>\n<tt><small>{calendar}</small></tt>"
+      // "tooltip-format": "{:%A %d/%m/%y}";
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "tooltip": false,
+      "format-icons": {
+        "active": "",
+        "default": ""
+      },
+      "persistent-workspaces": {
+        "1": [], "2": [], "3": [], "4": [], "5": []
+      }
+    },
+    "cpu": {
+      "format": " {usage}%",
+      "interval": 10
+    },
+    "memory": {
+      "format": " {}%",
+      "interval": 10
+    },
+    "disk": {
+      "format": "󰋊 {percentage_used}%",
+      "interval": 10
+    },
+    "temperature": {
+      "thermal-zone": 2,
+      "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+      "critical-threshold": 80,
+      "format": "{icon} {temperatureC}°C",
+      "format-icons": "",
+      "tooltip": false
+    },
+    "network": {
+      "format-alt": "{essid}",
+      "format-wifi": "  {signalStrength}%",
+      "format-ethernet": "{ipaddr}/{cidr} ",
+      "format-disconnected": "󰖪 No Network",
+      "tooltip-format": "{ifname} via {gwaddr} "
+    },
+    "backlight": {
+      "format": "{icon} {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""],
+      "tooltip": false
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "",
+      "tooltip": false,
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
+      },
+      "scroll-step": 1
+    },
+    "tray": {
+      "spacing": 10
+    },
+}
