@@ -13,6 +13,7 @@ in {
     ./hypr/default.nix
     ./nvim.nix
     ./fish.nix
+    ./git.nix
   ];
   xdg.configFile = {
     "starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${path}starship.toml";
