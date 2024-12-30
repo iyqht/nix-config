@@ -317,6 +317,7 @@
     NIXOS_OZONE_WL = "1";
     FLAKE = "/home/khang/nix-config/";
     EDITOR = "nvim";
+    GCM_CREDENTIAL_STORE = "gpg";
   };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
