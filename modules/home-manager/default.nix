@@ -17,8 +17,12 @@ in {
     # ./git.nix
 =======
     ./fish.nix
+<<<<<<< HEAD
     ./git.nix
 >>>>>>> parent of 6b5bf9b (comment git.nix in modules/home-manager/default.nix)
+=======
+    # ./git.nix
+>>>>>>> parent of c8c6d60 (uncomment git.nix in modules/home-manager/default.nix)
   ];
   xdg.configFile = {
     "starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${path}starship.toml";
