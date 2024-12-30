@@ -12,8 +12,13 @@ in {
   imports = [
     # ./hypr/default.nix
     ./nvim.nix
+<<<<<<< HEAD
     # ./fish.nix
     # ./git.nix
+=======
+    ./fish.nix
+    ./git.nix
+>>>>>>> parent of 6b5bf9b (comment git.nix in modules/home-manager/default.nix)
   ];
   xdg.configFile = {
     "starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${path}starship.toml";
