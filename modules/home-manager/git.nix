@@ -1,7 +1,7 @@
 {
   programs.git = {
     userEmail = "tranhoangkhanhvta@gmail.com";
-    userName = "khang";
+    userName = "iyqht";
     aliases = {
       co = "checkout";
     };
