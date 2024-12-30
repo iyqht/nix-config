@@ -10,10 +10,10 @@ in {
   # List your module files here
   # my-module = import ./my-module.nix;
   imports = [
-    ./hypr/default.nix
+    # ./hypr/default.nix
     ./nvim.nix
-    ./fish.nix
-    ./git.nix
+    # ./fish.nix
+    # ./git.nix
   ];
   xdg.configFile = {
     "starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${path}starship.toml";
