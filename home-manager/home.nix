@@ -107,7 +107,6 @@
     upower
     git-credential-manager
     pass-wayland
-    gnupg
   ];
 
   # Enable home-manager and git

@@ -260,6 +260,11 @@
       vimAlias = true;
       viAlias = true;
     };
+    gnupg = {
+      agent = {
+        enable = true;
+      };
+    };
   };
 
   security.pam.services.hyprlock = {};
