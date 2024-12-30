@@ -22,7 +22,7 @@ in {
       source = config.lib.file.mkOutOfStoreSymlink "${path}waybar";
       recursive = true;
     };
-    "kanata" = {
+    "kanata/kanata.kbd" = {
       source = ./kanata/kanata.kbd;
       recursive = true;
     };
