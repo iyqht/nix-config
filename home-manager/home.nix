@@ -106,6 +106,7 @@
     libgtop
     upower
     git-credential-manager
+    pass-wayland
   ];
 
   # Enable home-manager and git
