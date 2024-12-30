@@ -10,7 +10,7 @@ in {
   # List your module files here
   # my-module = import ./my-module.nix;
   imports = [
-    ./hypr/default.nix
+    # ./hypr/default.nix
     ./nvim.nix
     ./fish.nix
     ./git.nix
