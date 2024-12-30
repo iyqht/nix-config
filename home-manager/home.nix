@@ -105,6 +105,7 @@
     bluez
     libgtop
     upower
+    git-credential-manager
   ];
 
   # Enable home-manager and git
