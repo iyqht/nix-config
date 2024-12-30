@@ -115,6 +115,7 @@
   programs.gpg.enable = true;
 
   services = {
+    gnome-keyring.enable = true;
     gpg-agent.enable = true;
   };
 
