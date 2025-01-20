@@ -105,7 +105,7 @@
     bluez
     libgtop
     upower
-    git-credential-manager
+    gh
     pass-wayland
   ];
 
