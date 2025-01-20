@@ -105,6 +105,7 @@
     bluez
     libgtop
     upower
+    git
     gh
     pass-wayland
   ];
