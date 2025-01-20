@@ -76,7 +76,7 @@
     pavucontrol
     fd
     ripgrep
-    archiver
+    rar
     libsForQt5.qt5ct
     grim
     slurp
