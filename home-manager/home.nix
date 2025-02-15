@@ -123,12 +123,6 @@
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  catppuccin = {
-    enable = true;
-    flavor = "mocha";
-    accent = "blue";
-  };
-
   gtk = {
     enable = true;
     cursorTheme = {
@@ -151,11 +145,11 @@
     # };
   };
 
-  qt = {
-    enable = true;
-    style.name = "kvantum";
-    platformTheme.name = "kvantum";
-  };
+  # qt = {
+  #   enable = true;
+  #   style.name = "kvantum";
+  #   platformTheme.name = "kvantum";
+  # };
 
   home.pointerCursor = {
     package = pkgs.lib.mkForce pkgs.bibata-cursors;
