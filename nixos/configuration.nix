@@ -223,6 +223,12 @@
 
   virtualisation.waydroid.enable = false;
 
+  stylix = {
+    enable = true;
+    image = ../wall.jpg;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+  };
+
   programs = {
     hyprland.enable = true;
     thunar = {
