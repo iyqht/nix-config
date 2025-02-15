@@ -197,6 +197,7 @@
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
       nerd-fonts.fira-code
+      nerd-fonts.jetbrains-mono
     ];
     fontconfig = {
       defaultFonts = {
@@ -208,6 +209,7 @@
         ];
         monospace = [
           "FiraCode Nerd Font"
+          "JetBrainsMono Nerd Font"
         ];
       };
     };
@@ -227,6 +229,17 @@
     enable = true;
     image = ../wall.jpg;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    cursor = {
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Ice";
+      size = 20;
+    };
+    fonts = {
+      monospace = {
+        package = pkgs.fira-code;
+        name = "FiraCode Nerd Font";
+      };
+    };
   };
 
   programs = {

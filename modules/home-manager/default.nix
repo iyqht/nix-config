@@ -18,7 +18,7 @@ in {
   xdg.configFile = {
     "starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${path}starship.toml";
     "waybar" = {
-      # enable = false;
+      enable = false;
       source = config.lib.file.mkOutOfStoreSymlink "${path}waybar";
       recursive = true;
     };
