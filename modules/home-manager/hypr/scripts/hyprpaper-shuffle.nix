@@ -11,7 +11,6 @@ pkgs.writeShellScriptBin "hyprpaper-shuffle" ''
       wall=$(fd . $dir | shuf -n 1)
     else
       cache=$wall
-      echo -e "preload = $wall\nwallpaper = eDP-1,$wall" > $HOME/.config/hypr/hyprpaper.conf 
       hyprctl hyprpaper unload all
       hyprctl hyprpaper preload "$wall"
       hyprctl hyprpaper wallpaper eDP-1,"$wall"

@@ -14,16 +14,12 @@ in {
     ./nvim.nix
     ./fish.nix
     ./git.nix
+    ./waybar.nix
   ];
   xdg.configFile = {
     "starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${path}starship.toml";
-    "waybar" = {
-      enable = false;
-      source = config.lib.file.mkOutOfStoreSymlink "${path}waybar";
-      recursive = true;
-    };
     "kanata/kanata.kbd" = {
-      source = ./kanata/kanata.kbd;
+      source = ./kanata.kbd;
       recursive = true;
     };
   };
