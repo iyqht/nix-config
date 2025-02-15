@@ -16,7 +16,6 @@
       "format": "{:%T}",
       "interval": 1,
       "tooltip-format": "<big>{:%a, %d/%m}</big>\n<tt><small>{calendar}</small></tt>"
-      // "tooltip-format": "{:%A %d/%m/%y}";
     },
     "hyprland/workspaces": {
       "format": "{icon}",
@@ -73,5 +72,5 @@
     },
     "tray": {
       "spacing": 10
-    },
+    }
 }
