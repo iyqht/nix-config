@@ -225,23 +225,6 @@
 
   virtualisation.waydroid.enable = false;
 
-  stylix = {
-    enable = true;
-    image = ../wall.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-    cursor = {
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Ice";
-      size = 20;
-    };
-    fonts = {
-      monospace = {
-        package = pkgs.fira-code;
-        name = "FiraCode Nerd Font";
-      };
-    };
-  };
-
   programs = {
     hyprland.enable = true;
     thunar = {

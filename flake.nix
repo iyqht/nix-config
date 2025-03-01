@@ -14,7 +14,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     
     # Others
-    stylix.url = "github:danth/stylix";
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs =
@@ -62,7 +62,7 @@
           modules = [
             # > Our main nixos configuration file <
             ./nixos/configuration.nix
-            inputs.stylix.nixosModules.stylix
+            inputs.catppuccin.nixosModules.catppuccin
           ];
         };
       };
@@ -76,7 +76,7 @@
           modules = [
             # > Our main home-manager configuration file <
             ./home-manager/home.nix
-            inputs.stylix.homeManagerModules.stylix
+            inputs.catppuccin.homeManagerModules.catppuccin
           ];
         };
       };

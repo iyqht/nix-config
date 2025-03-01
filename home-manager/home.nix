@@ -111,11 +111,9 @@
   ];
 
   # Enable home-manager and git
-  programs = {
-    home-manager.enable = true;
-    git.enable = true;
-    gpg.enable = true;
-  };
+  programs.home-manager.enable = true;
+  programs.git.enable = true;
+  programs.gpg.enable = true;
 
   services = {
     gnome-keyring.enable = true;
@@ -125,27 +123,40 @@
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  stylix = {
+  gtk = {
     enable = true;
-    image = ../wall.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-    cursor = {
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Ice";
+    cursorTheme = {
+      name = pkgs.lib.mkForce "Bibata-Modern-Ice";
       size = 20;
     };
-    fonts = {
-      monospace = {
-        package = pkgs.fira-code;
-        name = "FiraCode Nerd Font";
-      };
-    };
     iconTheme = {
-      enable = true;
-      package = pkgs.papirus-icon-theme;
-      dark = "Papirus Dark";
-      light = "Papirus Light";
+      package = pkgs.catppuccin-papirus-folders;
+      name = "Papirus-Dark";
     };
+    # gtk3.extraConfig = {
+    #   Settings = ''
+    #     gtk-application-prefer-dark-theme=1
+    #   '';
+    # };
+    # gtk4.extraConfig = {
+    #   Settings = ''
+    #     gtk-application-prefer-dark-theme=1
+    #   '';
+    # };
+  };
+
+  # qt = {
+  #   enable = true;
+  #   style.name = "kvantum";
+  #   platformTheme.name = "kvantum";
+  # };
+
+  home.pointerCursor = {
+    package = pkgs.lib.mkForce pkgs.bibata-cursors;
+    name = pkgs.lib.mkForce "Bibata-Modern-Ice";
+    size = 20;
+    gtk.enable = true;
+    x11.enable = true;
   };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
