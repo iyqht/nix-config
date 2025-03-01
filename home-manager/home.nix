@@ -108,6 +108,7 @@
     git
     gh
     pass-wayland
+    usbutils
   ];
 
   # Enable home-manager and git
